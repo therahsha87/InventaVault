@@ -1,0 +1,57 @@
+'use client';
+
+import { Moon, Sun, Monitor } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
+import { useTheme } from '@/lib/theme-provider';
+
+export function ThemeToggle() {
+  const { theme, setTheme, actualTheme } = useTheme();
+
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button 
+          variant="outline" 
+          size="icon"
+          className="bg-background/80 backdrop-blur-sm border-border/50 hover:bg-accent/50 transition-all duration-200"
+        >
+          {actualTheme === 'dark' ? (
+            <Moon className="h-[1.2rem] w-[1.2rem] text-foreground" />
+          ) : (
+            <Sun className="h-[1.2rem] w-[1.2rem] text-foreground" />
+          )}
+          <span className="sr-only">Toggle theme</span>
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end" className="bg-background/95 backdrop-blur-sm border-border/50">
+        <DropdownMenuItem 
+          onClick={() => setTheme('light')}
+          className="cursor-pointer focus:bg-accent/50"
+        >
+          <Sun className="mr-2 h-4 w-4" />
+          <span>Light</span>
+        </DropdownMenuItem>
+        <DropdownMenuItem 
+          onClick={() => setTheme('dark')}
+          className="cursor-pointer focus:bg-accent/50"
+        >
+          <Moon className="mr-2 h-4 w-4" />
+          <span>Dark</span>
+        </DropdownMenuItem>
+        <DropdownMenuItem 
+          onClick={() => setTheme('system')}
+          className="cursor-pointer focus:bg-accent/50"
+        >
+          <Monitor className="mr-2 h-4 w-4" />
+          <span>System</span>
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
+}
