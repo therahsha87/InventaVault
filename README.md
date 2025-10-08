@@ -1,12 +1,12 @@
 # 🔐 InventaVault
 
-**InventaVault** is a next-generation patent protection platform that leverages AI to streamline patent submissions, enhance prior art research, and provide blockchain-based transaction recording. Built for inventors, legal professionals, and enterprises, InventaVault offers real-time collaboration, comprehensive portfolio management, and intelligent automation.
+InventaVault is a next-generation patent protection platform that leverages AI to streamline patent submissions, enhance prior art research, and provide blockchain-based transaction recording. Built for inventors, legal professionals, and enterprises, InventaVault offers real-time collaboration, comprehensive portfolio management, and intelligent automation.
 
 ---
 
-## ✨ Features
+✨ Features
 
-### Core Functionality
+Core Functionality
 - **🤖 AI-Powered Patent Assistance**: Streamline patent submissions with intelligent automation
 - **🔍 Advanced Prior Art Research**: Enhanced search capabilities using AI-driven analysis
 - **📊 Patent Portfolio Management**: Comprehensive dashboard for tracking and managing patents
@@ -14,14 +14,14 @@
 - **⛓️ Blockchain Transaction Recording**: Immutable records of patent-related transactions
 - **💳 Multi-Tier Subscriptions**: Flexible pricing with Starter, Professional, and Enterprise plans
 
-### Premium Features
+Premium Features
 - **AI Patent Analysis**: Advanced AI integrations for patent evaluation
 - **Blockchain Integration**: Secure, decentralized transaction records
 - **Priority Support**: Dedicated assistance for premium users
 - **Portfolio Analytics**: Advanced insights and reporting
 - **Team Collaboration**: Multi-user workspace management
 
-### User Experience
+User Experience
 - **🎨 Modern UI/UX**: Professional dark mode interface with light/dark toggle
 - **📱 Responsive Design**: Optimized for desktop, tablet, and mobile devices
 - **🔒 Secure Authentication**: Enterprise-grade security for sensitive IP data
@@ -29,45 +29,45 @@
 
 ---
 
-## 🛠️ Technology Stack
+🛠️ Technology Stack
 
-### Frontend
+Frontend
 - **Next.js 14**: React framework with App Router
 - **TypeScript**: Type-safe development
 - **Tailwind CSS**: Utility-first styling
 - **shadcn/ui**: High-quality component library
 - **OnchainKit**: Blockchain integration tools
 
-### Backend & Database
-- **SpacetimeDB**: Real-time database with built-in networking
-- **Next.js API Routes**: RESTful endpoints
+Backend & Database
+- SpacetimeDB: Real-time database with built-in networking
+- Next.js API Routes**: RESTful endpoints
 
-### Integrations
-- **Stripe**: Payment processing and subscription management
-- **XMTP**: Decentralized messaging for real-time collaboration
-- **Firecrawl**: Web scraping for patent research
-- **Perplexity AI**: Advanced AI-powered search
-- **Exa API**: Enhanced search capabilities
-- **TalentProtocol**: Identity and reputation management
+Integrations
+- Stripe: Payment processing and subscription management
+- XMTP: Decentralized messaging for real-time collaboration
+- Firecrawl: Web scraping for patent research
+- Perplexity AI: Advanced AI-powered search
+- Exa API: Enhanced search capabilities
+- TalentProtocol: Identity and reputation management
 
-### Infrastructure
-- **Vercel**: Deployment and hosting
-- **Farcaster**: Mini-app integration for decentralized social
+Infrastructure
+- Vercel: Deployment and hosting
+- Farcaster: Mini-app integration for decentralized social
 
 ---
 
-## 🚀 Getting Started
+🚀 Getting Started
 
-### Prerequisites
+Prerequisites
 - Node.js 18+ and npm/yarn/pnpm
 - Stripe account (for payment processing)
 - API keys for integrations (Firecrawl, Perplexity, Exa, etc.)
 
-### Installation
+Installation
 
-1. **Clone the repository** (if applicable) or access via Ohara platform
+1. Clone the repository (if applicable) or access via Ohara platform
 
-2. **Install dependencies**:
+2. Install dependencies:
 ```bash
 npm install
 # or
@@ -76,7 +76,7 @@ yarn install
 pnpm install
 ```
 
-3. **Set up environment variables**:
+3. Set up environment variables:
 
 Create a `.env.local` file (or configure in Vercel) with the following:
 
@@ -107,7 +107,7 @@ SPACETIMEDB_URI=your_spacetime_uri
 NEXT_PUBLIC_ONCHAINKIT_API_KEY=your_onchainkit_key
 ```
 
-4. **Run the development server**:
+4. Run the development server:
 ```bash
 npm run dev
 # or
@@ -116,7 +116,7 @@ yarn dev
 pnpm dev
 ```
 
-5. **Open your browser** and navigate to `http://localhost:3000`
+5. Open your browser and navigate to `http://localhost:3000`
 
 ---
 
@@ -178,19 +178,19 @@ inventavault/
 
 ### Deploy to Vercel (Recommended)
 
-1. **Via Ohara Platform**:
-   - Click the **"Publish"** button in Ohara
+1. Via Ohara Platform:
+   - Click the "Publish" button in Ohara
    - Your app is automatically deployed to Vercel
-   - Access deployment URL in **Configure → Settings**
+   - Access deployment URL in Configure → Settings
 
-2. **Via Vercel CLI**:
+2. Via Vercel CLI:
 ```bash
 npm install -g vercel
 vercel login
 vercel
 ```
 
-3. **Via Vercel Dashboard**:
+3. Via Vercel Dashboard:
    - Visit [vercel.com](https://vercel.com)
    - Import your Git repository
    - Configure environment variables
@@ -198,13 +198,13 @@ vercel
 
 ### Post-Deployment Configuration
 
-#### Stripe Webhooks
+Stripe Webhooks
 1. Go to Stripe Dashboard → Developers → Webhooks
 2. Add endpoint: `https://your-app.vercel.app/api/stripe/webhook`
 3. Select events: `checkout.session.completed`, `customer.subscription.updated`, `customer.subscription.deleted`
 4. Copy webhook signing secret to `STRIPE_WEBHOOK_SECRET`
 
-#### Environment Variables
+Environment Variables
 Ensure all environment variables are configured in Vercel:
 - Project Settings → Environment Variables
 - Add all keys from `.env.local`
@@ -212,68 +212,68 @@ Ensure all environment variables are configured in Vercel:
 
 ---
 
-## 💳 Stripe Subscription Tiers
+💳 Stripe Subscription Tiers
 
-### Starter Plan
+Starter Plan
 - Basic patent submission tools
 - Limited prior art searches
 - Standard support
-- **Price**: $29/month
+- Price: $29/month
 
-### Professional Plan
+Professional Plan
 - AI-powered patent analysis
 - Unlimited prior art research
 - Real-time collaboration
 - Priority support
-- **Price**: $99/month
+- Price: $99/month
 
-### Enterprise Plan
+Enterprise Plan
 - All Professional features
 - Blockchain transaction recording
 - Advanced portfolio analytics
 - Team collaboration tools
 - Dedicated account manager
-- **Price**: $299/month
+- Price: $299/month
 
 Configure pricing in Stripe Dashboard and update price IDs in environment variables.
 
 ---
 
-## 🔧 API Integrations
+🔧 API Integrations
 
-### Firecrawl
+Firecrawl
 Used for web scraping and patent research data extraction.
 - Get API key: [firecrawl.dev](https://firecrawl.dev)
 
-### Perplexity AI
+Perplexity AI
 Powers advanced AI-driven patent analysis and search.
 - Get API key: [perplexity.ai](https://www.perplexity.ai)
 
-### Exa API
+Exa API
 Enhances search capabilities for prior art research.
 - Get API key: [exa.ai](https://exa.ai)
 
-### TalentProtocol
+TalentProtocol
 Provides identity and reputation management.
 - Get API key: [talentprotocol.com](https://talentprotocol.com)
 
-### XMTP
+XMTP
 Enables decentralized, encrypted messaging for collaboration.
 - No API key required (uses client-side integration)
 
 ---
 
-## 🗄️ SpacetimeDB
+🗄️ SpacetimeDB
 
 InventaVault uses SpacetimeDB for real-time data synchronization and collaboration features.
 
-### Key Features
+Key Features
 - Real-time patent portfolio updates
 - Live collaboration sessions
 - Instant notification delivery
 - Automatic conflict resolution
 
-### Database Schema
+Database Schema
 Defined in `spacetime-server/src/lib.rs` with tables for:
 - Patents
 - Users
@@ -289,10 +289,10 @@ Client bindings are auto-generated in `src/spacetime_module_bindings/`.
 
 We welcome contributions to InventaVault! Here's how you can help:
 
-1. **Report Bugs**: Open an issue with detailed reproduction steps
-2. **Suggest Features**: Share ideas for new capabilities
-3. **Submit Pull Requests**: Contribute code improvements
-4. **Improve Documentation**: Help make our docs better
+1. Report Bugs: Open an issue with detailed reproduction steps
+2. Suggest Features: Share ideas for new capabilities
+3. Submit Pull Requests: Contribute code improvements
+4. Improve Documentation: Help make our docs better
 
 ### Development Guidelines
 - Follow TypeScript best practices
@@ -311,23 +311,23 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🆘 Support
 
-### Documentation
-- View code and configuration in Ohara's **Configure** tab
-- Access deployment settings in **Configure → Settings**
+Documentation
+- View code and configuration in Ohara's Configure tab
+- Access deployment settings in **Configure → Settings
 
-### Issues & Questions
+Issues & Questions
 - Check existing documentation
 - Review code in the file editor
 - Contact support for deployment or technical issues
 
-### Professional Support
+Professional Support
 Enterprise users receive dedicated support. Contact your account manager or upgrade to Enterprise tier for priority assistance.
 
 ---
 
 ## 🎯 Roadmap
 
-### Upcoming Features
+Upcoming Features
 - [ ] Advanced AI patent claim generation
 - [ ] International patent filing support
 - [ ] Patent valuation tools
