@@ -4,6 +4,7 @@ import './globals.css';
 import { Providers } from './providers';
 import { ThemeProvider } from '@/lib/theme-provider';
 import FarcasterWrapper from "@/components/FarcasterWrapper";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function RootLayout({
   children,
