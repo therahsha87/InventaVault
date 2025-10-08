@@ -1,0 +1,37 @@
+{
+  "frame": {
+    "name": "InventaVault",
+    "version": "1",
+    "iconUrl": "https://imgur.com/a/5X5blME",
+    "homeUrl": "https://inventa-vault.vercel.app/",
+    "imageUrl": "https://imgur.com/a/5X5blME",
+    "buttonTitle": "Do Work",
+    "splashImageUrl": "https://inventa-vault.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "webhookUrl": "https://inventa-vault.vercel.app/api/webhook",
+    "heroImageUrl": "https://imgur.com/a/5X5blME",
+    "tags": [
+      "patent",
+      "invent",
+      "legal",
+      "research",
+      "security"
+    ],
+    "tagline": "Think Big Patent Lockdown",
+    "ogTitle": "InventaVault - Patent Tight",
+    "ogDescription": "Next-gen patent protection platform that streamlines patent submissions, research and recording.",
+    "castShareUrl": "https://inventa-vault.vercel.app/",
+    "ogImageUrl": "https://imgur.com/a/5X5blME",
+    "primaryCategory": "utility",
+    "description": "Next-gen patent protection platform that streamlines patent submissions, research and recording.",
+    "subtitle": "Dream, Create and Get Patents on Lock",
+    "screenshotUrls": [
+      "https://imgur.com/a/5X5blME"
+    ]
+  },
+  "accountAssociation": {
+    "header": "eyJmaWQiOjEzMzE5MTYsInR5cGUiOiJhdXRoIiwia2V5IjoiMHhjNWY2QzNiRThiMzVhRTBmZTNGQzkwOUZFZDcxMTExYTQ1ZTdGMkUwIn0",
+    "payload": "eyJkb21haW4iOiJodHRwczovL2ludmVudGEtdmF1bHQudmVyY2VsLmFwcC8ifQ",
+    "signature": "voZtzpFtSB765ckqbJ05UUeivYBrVwMWTU5gnc5kp6FlKGL7sta5tzpgssIzsQJDlblSXmFXo4Q+zdGvrfD0YBw="
+  }
+}
