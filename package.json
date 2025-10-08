@@ -1,8 +1,4 @@
 {
-  import { SpeedInsights } from "@vercel/speed-insights/next"
-},
-
-{
   "name": "mini-app",
   "version": "0.1.0",
   "private": true,
