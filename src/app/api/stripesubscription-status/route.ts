@@ -92,8 +92,9 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     } else if (activeSubscription.items.data.length > 0) {
       const priceId = activeSubscription.items.data[0].price.id;
       // Map price IDs to tiers (you'll need to update these with your actual price IDs)
-      if (priceId.includes('professional')) tier = 'professional';
-      else if (priceId.includes('enterprise')) tier = 'enterprise';
+      if (priceId === 'prod_TCCoOP09IkvJic') tier = 'professional';
+      else if (priceId === 'prod_TCCprrdr03X1Hd') tier = 'enterprise';
+      else if (priceId === 'prod_TCCmWLzXA5NFZC') tier = 'starter';
       else tier = 'starter';
     }
 
