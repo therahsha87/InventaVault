@@ -18,6 +18,8 @@
       }
     ],
     "paths": {
+    "baseUrl": ".",
+    "paths": {
       "@/*": ["./src/*"]
     },
     "target": "ES2017"
