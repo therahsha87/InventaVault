@@ -14,7 +14,7 @@
     "incremental": true,
     "plugins": [
       {
-        "name": "next.js 13.4.0"
+        "name": "next.js 13.3.4"
       }
     ],
     "paths": {
