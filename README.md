@@ -1,5 +1,7 @@
 🔐 InventaVault
 
+---
+
 InventaVault is a next-generation patent protection platform that leverages AI to streamline patent submissions, enhance prior art research, and provide blockchain-based transaction recording. Built for inventors, legal professionals, and enterprises, InventaVault offers real-time collaboration, comprehensive portfolio management, and intelligent automation.
 
 ---
@@ -7,25 +9,24 @@ InventaVault is a next-generation patent protection platform that leverages AI t
 ✨ Features
 
 Core Functionality
-- 🤖 AI-Powered Patent Assistance: Streamline patent submissions with intelligent automation
-- 🔍 Advanced Prior Art Research: Enhanced search capabilities using AI-driven analysis
-- 📊 Patent Portfolio Management: Comprehensive dashboard for tracking and managing patents
-- 🌐 Real-Time Collaboration: Built-in messaging and collaboration tools via XMTP
-- ⛓️ Blockchain Transaction Recording: Immutable records of patent-related transactions
-- 💳 Multi-Tier Subscriptions: Flexible pricing with Starter, Professional, and Enterprise plans
+🤖 AI-Powered Patent Assistance: Streamline patent submissions with intelligent automation
+Advanced Prior Art Research: Enhanced search capabilities using AI-driven analysis
+📊 Patent Portfolio Management: Comprehensive dashboard for tracking and managing patents 🌐 Real-Time Collaboration: Built-in messaging and collaboration tools via XMTP
+⛓️ Blockchain Transaction Recording: Immutable records of patent-related transactions
+💳 Multi-Tier Subscriptions: Flexible pricing with Starter, Professional, and Enterprise plans
 
 Premium Features
-- AI Patent Analysis: Advanced AI integrations for patent evaluation
-- Blockchain Integration: Secure, decentralized transaction records
-- Priority Support: Dedicated assistance for premium users
-- Portfolio Analytics: Advanced insights and reporting
-- Team Collaboration: Multi-user workspace management
+AI Patent Analysis: Advanced AI integrations for patent evaluation
+Blockchain Integration: Secure, decentralized transaction records
+Priority Support: Dedicated assistance for premium users
+Portfolio Analytics: Advanced insights and reporting
+Team Collaboration: Multi-user workspace management
 
 User Experience
-- 🎨 Modern UI/UX: Professional dark mode interface with light/dark toggle
-- 📱 Responsive Design: Optimized for desktop, tablet, and mobile devices
-- 🔒 Secure Authentication: Enterprise-grade security for sensitive IP data
-- ⚡ Real-Time Sync: Powered by SpacetimeDB for instant data updates
+🎨 Modern UI/UX: Professional dark mode interface with light/dark toggle
+📱 Responsive Design: Optimized for desktop, tablet, and mobile devices
+🔒 Secure Authentication: Enterprise-grade security for sensitive IP data
+⚡ Real-Time Sync: Powered by SpacetimeDB for instant data updates
 
 ---
 
@@ -60,11 +61,11 @@ Configure pricing in Stripe Dashboard and update price IDs in environment variab
 
 Firecrawl
 Used for web scraping and patent research data extraction.
-- Get API key: [firecrawl.dev](https://firecrawl.dev)
+Get API key: [firecrawl.dev](https://firecrawl.dev)
 
 Perplexity AI
 Powers advanced AI-driven patent analysis and search.
-- Get API key: [perplexity.ai](https://www.perplexity.ai)
+Get API key: [perplexity.ai](https://www.perplexity.ai)
 
 Exa API
 Enhances search capabilities for prior art research.
@@ -72,11 +73,11 @@ Enhances search capabilities for prior art research.
 
 TalentProtocol
 Provides identity and reputation management.
-- Get API key: [talentprotocol.com](https://talentprotocol.com)
+Get API key: [talentprotocol.com](https://talentprotocol.com)
 
 XMTP
 Enables decentralized, encrypted messaging for collaboration.
-- No API key required (uses client-side integration)
+No API key required (uses client-side integration)
 
 ---
 
